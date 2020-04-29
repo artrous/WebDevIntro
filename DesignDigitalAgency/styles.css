@@ -1,0 +1,117 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family: 'Open Sans', sans-serif}
+section{background:#f0f0f0;padding:10px}
+h1{color:white;text-align:center;font-size:2.4em;font-family: 'Roboto', sans-serif}
+
+/*-------------Email-Telephone-------------*/
+nav.mail_tel{float:left}
+.email{color:rgb(60, 179, 113);margin:0 5px 0 0}
+.telephone{color:rgb(60, 179, 113);margin:0 5px 0 0}
+.gap{color:hsl(0,0%,20%);font-size:0.9em;margin:0 20px 0 0}
+
+/*-------------Nav-------------*/
+.container{width:80%;margin:0 auto}
+.logo{font-size:20px;float:left;padding-top:20px}
+nav{float:right}
+nav ul{list-style-type:none}
+nav ul li{display:inline-block;position:relative}
+nav ul li ul{text-align:left;position:absolute;width:200%;top:-1000%;left:0;
+visibility:hidden;transition:all 0.01s;opacity:0}
+.border{border-top:solid 2px green}
+nav ul li.current a{color:green}
+nav ul li a{display:block;color:#3c3c3c;font-size:14px;
+text-decoration:none;padding:40px 15px;
+font-family: 'Roboto', sans-serif;transition:all 0.5s}
+nav ul li ul li{display:block;margin:0}
+nav ul li a:hover{background:rgb(255,255,255)}
+nav ul li ul li a{font-size:12px;padding:15px 15px;border-bottom:solid 1px #eee}
+nav ul li ul li.artemis a{color:#3c3c3c}
+nav ul li:hover ul{background:hsl(0,100%,100%);visibility:visible;top:100%;left:0;opacity:1}
+.clear{clear:both}
+
+/*-------------Slider-------------*/
+.slider{padding:0;background:lightblue url('images/b.jpg') no-repeat;background-size:cover}
+.backslider{background:rgba(0,0,0,0.6);padding:130px 0}
+
+/*-------------Services-------------*/
+.services{background:white;text-align:center;padding:100px 0 100px 0}
+.icon_box{width:80px;height:80px;background:#3cb371;
+border-radius:50%;margin:0 auto;margin-bottom:25px}
+.service_box{background:white;border:1px solid #3cb371;width:32%;float:left;
+text-align:center;padding-top:30px;margin-right:2%}
+.service_box:nth-child(3){margin-right:0%}
+.fa-layer-group{color:white;font-size:30px;margin-top:25px}
+.fa-thumbs-up{color:white;font-size:30px;margin-top:25px}
+.fa-umbrella{color:white;font-size:30px;margin-top:25px}
+.service_box h3{margin-bottom:15px;font-size:1em;color:hsl(0,0%,20%)}
+.service_box p{margin-bottom:30px;padding:0 20px;font-size:0.8em;color:#787878}
+
+/*-------------Video Guidline-------------*/
+.watch{background:rgb(0,0,90);padding:70px 0}
+.watch_boxA{width:48.5%;float:left;margin-right:3%}
+.watch_boxB{width:48.5%;float:left}
+.watch_boxA img{width:100%;display:block;opacity:0.8}
+.watch_boxB h3{color:white;font-size:1.6em;margin-bottom:0.8em}
+.watch_boxB p{color:white;font-size:0.9em;text-align:left;margin-bottom:1.2em}
+.fa-arrow-alt-circle-right{color:green;margin-right:0.8em}
+.justification{color:white;float:left}
+nav.justification ul li{font-size:1em;display:block;margin-bottom:0.6em}
+.backwatch{background:rgba(59,67,76,0.8)}
+
+/*-------------Experts-------------*/
+.experts{background:white;font-family: 'Work Sans', sans-serif;
+text-align:center;padding:70px 0 70px 0}
+.experts p{font-size:1em;margin-bottom:3em;padding:0 200px 0 200px;color:#787878}
+.greentxt{color:#3cb371}
+.title{color:#3c3c3c;margin-bottom:0.2em}
+.imfig{border:1px solid lightgray;margin-bottom:10px;
+float:left;width:23.5%;text-align:center;margin-right:2%}
+.imfig:nth-child(4){margin-right:0%}
+.imfig figcaption{margin-top:0.6em;font-size:1em;color:#3c3c3c}
+figcaption.size{font-size:0.8em;margin-bottom:1em;color:#787878}
+.imfig img{width:100%;display:inline-block}
+
+/*-------------Footer-------------*/
+footer{background:hsl(0,0%,5%);padding:20px 0}
+.copyright{font-size:0.8em;color:white}
+
+
+
+/*-------------Responsive-------------*/
+@media (max-width:768px){
+nav.mail_tel ul li{float:left}
+.logo{width:100%;text-align:center}
+nav{width:100%;float:left}
+nav ul li{text-align:center;display:block}
+nav ul li a{padding:1em 0.8em;border-bottom:solid 1px #eee}
+nav ul li ul{width:100%}
+nav ul li:hover ul{top:100%;z-index:1}
+nav ul li ul li a{border-bottom:solid 2px #eee}
+h1{font-size:2.2em}
+.service_box{width:100%;margin-bottom:4%}
+.service_box:nth-child(3){margin-bottom:0%}
+.watch{padding-bottom:50px}
+.watch_boxA{width:100%;margin-bottom:6%}
+.watch_boxB{width:100%;text-align:left}
+.watch_boxB h3{font-size:1.4em}
+.watch_boxB p{font-size:0.8em;text-align:left}
+.justification{color:white;float:left}
+nav.justification ul li{font-size:0.9em;text-align:left}
+.experts p{padding:0}
+.imfig{float:left;width:48%;margin:0 4% 4% 0}
+.imfig:nth-child(2), .imfig:nth-child(4){margin-right:0%}
+}
+
+@media (max-width:576px){
+nav.mail_tel ul li{font-size:0.8em;text-align:left;width:100%}
+h1{font-size:1.8em}
+.services{padding:70px 0 70px 0}
+.fa-layer-group{font-size:60px}
+.fa-thumbs-up{font-size:60px}
+.fa-umbrella{font-size:60px}
+.watch_boxB h3{font-size:1.3em}
+.experts p{font-size:0.9em}
+.imfig{width:100%;margin-bottom:5%}
+.imfig:nth-child(4){margin-bottom:0%}
+.copyright{font-size:0.7em}
+}

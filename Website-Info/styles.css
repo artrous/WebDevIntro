@@ -1,0 +1,148 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family: 'Open Sans', sans-serif}
+header{background:black;color:white;
+position:fixed;top:0;width:100%;z-index:1}
+h1{font-family: 'Ubuntu', sans-serif;
+font-size:2.5em;margin-bottom:0.8em;
+text-align:left;text-shadow:1px 1px;}
+h2{font-family: 'Ubuntu', sans-serif;
+font-size:1.5em;margin-bottom:0.8em}
+input, textarea{font-family: 'Roboto', sans-serif}
+
+/*-------Header-------*/
+.container{width:80%;margin:0 auto}
+nav{text-align:center}
+nav ul{list-style-type:none}
+nav ul li{display:inline-block;position:relative}
+nav ul li ul{text-align:left;position:absolute;width:250%;top:-1000%;left:0;
+visibility:hidden;transition:all 0.01s;opacity:0}
+.width{width:200%}
+nav ul li a{display:block;color:white;
+font-size:15px;text-decoration:none;
+padding:20px 15px;transition:all 0.5s}
+nav ul li ul li{display:block;margin:0}
+nav ul li a:hover{background:rgb(35,35,35)}
+nav ul li ul li a{padding:10px 5px}
+nav ul li:hover ul{background:hsl(0,0%,47%);visibility:visible;top:100%;left:0;opacity:1}
+.clear{clear:both}
+
+/*-------Info-------*/
+.info{padding:100px 0;margin-top:50px}
+.info_boxA{width:25%;float:left;margin-right:5%}
+.info_boxB{width:70%;float:left}
+.info_boxA img{width:100%;border-radius:50%;display:block;
+/*transform:scale(1);transition:all 1s}
+.info_boxA img:hover{transform:scale(1.2)*/}
+.info_boxB p{font-size:1.2em;text-align:left;margin-bottom:4em}
+.info_boxB a{text-align:left;color:white;text-decoration:none;
+font-size:1.2em;background:#3c3c3c;display:inline-block;
+padding:10px 30px;border-radius:2px;transition:all 0.5s}
+.info_boxB a:hover{background:rgb(25,25,25)}
+
+/*-------Services-------*/
+.services{background:#f0f0f0;text-align:center;padding:100px 0 70px 0}
+.services p{margin-bottom:3em}
+.service_box{background:white;width:32%;float:left;
+text-align:center;padding-top:50px;margin-bottom:3em;
+margin-right:2%;/*transition:all 0.5s;*/
+box-shadow:10px 10px 5px grey}
+.service_box:nth-child(3){margin-right:0%}
+.fa-comments{font-size:100px;margin-bottom:30px}/*Font Awesome*/
+.fa-camera-retro{font-size:100px;margin-bottom:30px}/*Font Awesome*/
+.fa-thumbs-up{font-size:100px;margin-bottom:30px}/*Font Awesome*/
+.service_box h3{margin-bottom:15px}
+.service_box p{margin-bottom:40px;padding:0 40px}
+.services a{color:white;text-decoration:none;font-size:1.2em;
+background:#3c3c3c;display:inline-block;margin-top:1em;
+padding:10px 30px;border-radius:2px;transition:all 0.5s}
+.services a:hover{background:rgb(25,25,25)}
+/*.service_box:hover{transform:scale(1.2)}*/
+
+/*-------Works-------*/
+.works{background:#b4b4b4;text-align:center;padding:70px 0 100px 0}
+.works p{margin-bottom:3em}
+.works_grid{margin-bottom:2em}
+.work_box{background:white;width:32%;float:left;
+text-align:center;margin:0 2% 2% 0;overflow:hidden;
+box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.work_box:nth-child(3), .work_box:nth-child(6){margin-right:0%}
+.work_box img{width:100%;display:block;margin-bottom:30px;
+transform:scale(1);transition:all 1s}
+.work_box img:hover{transform:scale(1.2)}
+.work_box h3{margin-bottom:10px}
+.work_box p{margin-bottom:30px}
+.works a{color:white;text-decoration:none;font-size:1.2em;
+background:#3c3c3c;display:inline-block;margin-top:1em;
+padding:10px 30px;border-radius:2px;transition:all 0.5s}
+.works a:hover{background:rgb(25,25,25)}
+
+/*-------Contact-------*/
+.contact{background:rgb(60,60,60);text-align:center;padding:100px 0 5px 0}
+.header{color:white}
+.contact p{margin-bottom:3em;color:white}
+.form_text{width:49%;float:left;margin-right:2%}
+.email_txt{margin-right:0%}
+.subject_txt{width:100%;float:left}
+.form_textarea{width:100%;float:left}
+.form_submit{width:100%;float:left;text-align:center}
+/*.form_grid label{display:block;margin-bottom:5px}*/
+.form_text input{background:rgb(25,25,25);color:white;width:100%;
+font-size:14px;padding:15px;margin-bottom:20px;border-radius:8px;border:none}
+.form_textarea textarea{background:rgb(25,25,25);color:white;width:100%;height:250px;
+font-size:14px;padding:15px;border-radius:8px;border:none;/*resize:none*/}
+.form_submit input{background:#606060;/*background:none;*/color:white;
+font-size:1.2em;border-radius:solid 2px white;padding:10px 30px;
+margin:40px 0 80px 0;cursor:pointer;transition:all 0.5s}
+.form_submit input:hover{background:rgb(25,25,25)}
+.copyright{font-size:0.8em}
+
+/*-------Arrow-up Button-------*/
+.arrow-up_box a{display:block;font-size:50px;
+	position:fixed;right:40px;bottom:40px}
+
+
+
+/*-------Responsive-------*/
+@media (max-width:768px){
+	.info_boxA{width:100%;margin-bottom:15%}
+	.info_boxB{width:100%;text-align:center}
+	.info_boxB p{text-align:center}
+	.service_box{width:100%;margin-bottom:4%}
+	.services_grid{margin-bottom:4%}
+	.works_grid{margin-bottom:6%}
+	.work_box{width:48%;margin-right:4%;margin-bottom:4%}
+	.work_box:nth-child(2), .work_box:nth-child(4), .work_box:nth-child(6){margin-right:0%}
+	.work_box:nth-child(3){margin-right:4%}
+	.work_box h3{font-size:1em}
+	.work_box p{font-size:0.8em}
+	/*.work_box:nth-child(5), .work_box:nth-child(6){display:none}*/
+	.arrow-up_box a{font-size:40px;right:15px;bottom:15px}
+}
+
+@media (max-width:576px){
+	h1{font-size:2em;text-align:center}
+	h2{font-size:1.3em}
+	nav{width:100%;float:left}
+	nav ul li{display:block;text-align:center}
+	nav ul li a{padding:1em 0.8em;border-bottom:dashed 1px #eee}
+	nav ul li ul{width:100%}
+	nav ul li ul.width{width:100%}
+	nav ul li:hover ul{top:100%;z-index:1}
+	nav ul li ul li a{border:none}
+	.info_boxB p{font-size:1em}
+	.info_boxB a{font-size:1em}
+	.services_grid{margin-bottom:8%}
+	.service_box{margin-bottom:6%}
+	.fa-comments{font-size:80px}
+	.fa-camera-retro{font-size:80px}
+	.fa-thumbs-up{font-size:80px}
+	.service_box h3{font-size:1em}
+	.service_box p{font-size:0.8em}
+	.services a{font-size:1em}
+	.works_grid{margin-bottom:8%}
+	.work_box{width:100%;margin-bottom:6%}
+	.works a{font-size:1em}
+	.form_text{width:100%}
+	.form_submit input{font-size:1em}
+	.arrow-up_box a{font-size:30px;right:10px;bottom:10px}
+}
